@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <input type="text" name="" id="user">
+   
+   <script>
+    let input = document.getElementById("user");
+    input.addEventListener("keydown", (e)=>{
+            if(e.key== "s"){
+                console.log("sachin is the best ");
+                
+            }else{
+                console.log("world is waste ")
+            }
+    })
+
+      input.addEventListener("keydown", (e)=>{
+           console.log(e)
+           // this is will return the whole object you have select the as per the user requirement 
+           
+    })
+   </script>
+</body>
+</html>

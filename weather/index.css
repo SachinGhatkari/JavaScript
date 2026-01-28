@@ -1,0 +1,19 @@
+body{
+    display: flex;
+    align-items: center;
+   justify-content: center;
+   height: 100vh;
+   background-color: lightblue;
+}
+
+#container{
+    box-shadow: 0 0 10px black;
+    padding: 20px;
+    background-color: white;
+    border-radius: 12px;
+}
+#input, #btn{
+    border-radius: 5px;
+    padding: 10px;
+}
+/ṁ

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="funs"> </h1>
+    <script>
+
+        // name function
+        // function name(){
+        //    document.getElementById("funs").innerText="Hello im back";
+
+        // }        
+        // name();
+
+        //combination of generative and annoymous functions 
+        // function Expression  -- storing an entire function inside a variable is known as function expression
+        // let a = function (){
+        //      document.getElementById("funs").innerText="annoynomous function has to stored somewhere"+
+        //       "to be called it cannot be called directly since it has no  name remember that  ";
+        // }
+        // a();
+
+        // generative function 
+
+
+        function * products(){
+            yield ["samsung","apple"];
+            yield ["biriyani","chicken birayani"];
+            
+        }
+
+        for(let i of products()){
+           i.forEach(j=>console.log(j));
+        }
+        
+
+        
+
+        
+
+
+
+
+    </script>
+</body>
+</html>

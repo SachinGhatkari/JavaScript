@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+  <script>
+
+     const user ={
+            name :"alex",
+            age:25,
+            gender:"male",
+           
+        }
+
+        // sealedd we connot add we can only update 
+        Object.seal(user);
+        user.name = "venkatesh";
+        console.log(user)
+
+       console.log(
+        Object.isSealed(user));
+
+
+         const user1 ={
+            name :"alex",
+            age:25,
+            gender:"male",
+           
+        }
+        
+        Object.freeze(user1);
+
+       console.log(
+        Object.isFrozen(user));
+
+        delete user1.name;
+        
+  </script>  
+</body>
+</html>

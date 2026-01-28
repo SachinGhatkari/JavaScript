@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+// implicit type casting 
+        let a = 123;
+        console.log(typeof(a));
+
+        let b = a.toString();
+        console.log(typeof(b));
+
+        console.log("explicit typecasting ")
+// explicit Type casting 
+
+        let c = "123";
+        console.log(typeof(c));
+
+        let d = BigInt(c);
+        console.log(typeof(d))
+// number to boolean 
+
+            let z = 0;
+            let g = Boolean(z);
+            console.log(g)
+            console.log(typeof(g));
+            console.log("tricky boolean ")
+
+          console.log(  Boolean("false"));
+          console.log(  Boolean("TRUE"));
+
+
+          /// boolean to big int 
+         
+          console.log(BigInt(true));
+    </script>
+</body>
+</html>

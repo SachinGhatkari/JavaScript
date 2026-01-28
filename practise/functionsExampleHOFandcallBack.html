@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        function greet(){
+            console.log("good afternoon")
+        }
+        function hof(callback){
+            callback();
+        }
+        hof(greet);
+
+        function reels(name){
+            console.log(name+" is watching reels")
+        }
+
+        function instgram(callback,name){
+            if(name=="sachin"){
+                callback(name);
+            }else{
+                console.log("invalid users")
+            }
+        }
+
+        instgram(reels,"sachin");
+
+
+        function show(){
+            console.log("hello")
+        }
+
+        function calling(callback){
+            callback("hello");
+        }
+
+        calling(show);
+    </script>
+</body>
+</html>

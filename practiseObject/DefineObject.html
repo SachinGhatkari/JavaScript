@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        const user = {
+            name: "sachin",
+            age: 25,
+            skills : ["java", "javascript"],
+            address: {
+                city: "bangalore",
+                state: "KARNATAKA"
+            }
+        }
+
+        console.log(user.name)
+        console.log(user.skills[0])
+
+        console.log(user.address.city)
+
+          console.log("---------------------accesing by []")
+
+          console.log(user["name"])
+
+          console.log(user["address"]["city"])
+
+
+          console.log("---------------------Updating the value in the object ")
+
+
+          user.name = "sachin L G";
+
+          console.log(user["name"])
+
+          user.gender ="Alpha male"
+
+               console.log(user["gender"])          
+
+
+        delete user.age;
+
+        console.log(user)
+
+
+        console.log("using the objects methods ")
+
+
+        console.log(Object.keys(user))
+
+         console.log(Object.values(user))
+
+         console.log(Object.entries(user))
+
+
+    </script>
+</body>
+</html>

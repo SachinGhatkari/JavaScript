@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button id="btn">click</button>
+    <script>
+        let button = document.getElementById("btn");
+
+        button.addEventListener("click", ()=>{
+            console.log("this is function a ")
+        })
+
+        button.addEventListener("click", () =>{
+            console.log("this is function b")
+        })
+
+         button.addEventListener("mouseover", () =>{
+           button.style.backgroundColor ="red";
+           console.log("changed to red ")
+        })
+
+        button.addEventListener("mouseout", () =>{
+           button.style.backgroundColor ="white";
+           console.log("changed to white ");
+           
+        })
+            
+        
+    </script>
+</body>
+</html>

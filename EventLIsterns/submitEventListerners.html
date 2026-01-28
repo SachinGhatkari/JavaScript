@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+  <form action="" id="handledata">
+    <input type="text" name="" placeholder="enter username" id="username">
+
+    <input type="text" name="" placeholder="enter useremail" id="useremail">
+
+    <button>submit</button>
+  </form>  
+
+  <script>
+    let form = document.getElementById("handledata");
+    form.addEventListener("submit",(e)=>{
+        
+        e.preventDefault();
+        let a = document.getElementById("username").value;
+        let b = document.getElementById("useremail").value;
+
+        console.log(a);
+        console.log(b);
+
+        localStorage.setItem("username",a);
+        localStorage.setItem("email",b);
+    })
+
+  </script>
+</body>
+</html>

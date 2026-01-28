@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=\, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    
+    <center>
+        <h1>Sign up page</h1>
+    </center>
+
+    <center>
+    <form action="" id="handledata">
+        <input type="text" id="username" placeholder="enter username" required><br>
+        <input type="text" id="email" placeholder="enter emial address" required> <br>
+        <input type="text" id="phone" placeholder="enter phone number" required><br>
+        <input type="text" id="password" placeholder="enter password" required>
+        <button>submit</button>
+    </form>
+    </center>
+
+    <script>
+        let form = document.getElementById("handledata");
+        form.addEventListener("submit", (e) => {
+            e.preventDefault();
+            let name = document.getElementById("username").value;
+            let email = document.getElementById("email").value;
+            let phone = document.getElementById("phone").value;
+            let password = document.getElementById("password").value;
+            localStorage.setItem("username", name);
+            localStorage.setItem("email", email);
+            localStorage.setItem("phone", phone);
+            localStorage.setItem("password", password);
+            alert("sign up  succesfull")
+            window.location.href = "Loginpage.html";
+            form.reset();
+           
+        });
+
+    </script>
+</body>
+
+</html>

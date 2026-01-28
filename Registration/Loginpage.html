@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <h1>Login page </h1>
+    <center>
+        <form action="" id="loginPage">
+
+            <input type="text" id="email" required placeholder="enter email  "><br>
+            <input type="text" id="password" required placeholder="enter password">
+            <button>submit </button>
+        </form>
+    </center>
+
+    <!--  -->
+    <script>
+        let form = document.getElementById("loginPage");
+        form.addEventListener("submit", (e) => {
+            e.preventDefault();
+            let email = document.getElementById("email").value;
+            let password = document.getElementById("password").value;
+
+            let email1 = localStorage.getItem("email");
+            let password1 = localStorage.getItem("password");
+            if (email1 === email && password1 === password) {
+                window.location.href="home.html";
+                alert("login succesfull");
+            }else{
+                alert("invalid credentials ")
+            }
+
+        })
+    </script>
+</body>
+
+</html>

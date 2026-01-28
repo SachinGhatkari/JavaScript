@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="add()">Add elements</button>
+
+    <div id="container">
+
+    </div>
+
+    <script>
+        function add(){
+            let h1 = document.createElement("h1");
+            h1.innerText="created using create element h1"
+
+            let para = document.createElement("p")
+            para.innerText="this is the paragraph to tell you that i have created this using createElement you can check it by using insecppt buttonn"
+
+
+            let container = document.getElementById("container");
+
+            let button = document.createElement("button");
+
+            button.innerText="Chinmay watch this "
+            container.append(h1,para,button);
+        }
+
+    </script>
+</body>
+</html>

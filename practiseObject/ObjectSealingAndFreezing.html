@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <script>
+    const user = {
+        name : "sachin",
+        age : "25",
+        city:"bangalore"
+
+    }
+
+    Object.seal(user)
+
+    user.state ="kar" // cannot add 
+
+    delete user.age; // cannot delete
+
+
+    // can be updated 
+
+    user.city="yadgir"
+
+    console.log(user)//
+
+    // to checked whether object is sealed or not we user 
+
+
+    console.log(Object.isSealed(user))
+
+
+    console.log(    Object.freeze(user));
+   console.log( Object.isFrozen(user));
+
+   </script> 
+</body>
+</html>

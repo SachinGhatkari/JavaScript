@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Document</title>
+</head>
+
+<body>
+    <Script>
+
+        let today = new Date();
+        let day = today.getDay();
+        console.log("day" + day);
+
+        switch (day) {
+            case 0:
+                console.log("Sunday");
+                break;
+             case 1:
+                console.log("monday");
+                break;
+             case 2:
+                console.log("tuesday");
+                break;
+             case 3:
+                console.log("wednesday");
+                break;
+             case 4:
+                console.log("thursday");
+                break;
+             case 5:
+                console.log("friday");
+                break; 
+            case 6:
+                console.log("saturday");
+                break; 
+             default:
+                console.log("in valid ")                 
+                
+        }
+
+
+        let amount = 1000;
+        let finalAmount ;
+        let todays = new Date().getDay();
+
+        switch(todays){
+            case 1:
+            case 2:
+            case 3:
+            case 4:
+            case 5:
+                finalAmount = amount - (amount*0.10);
+                console.log(`discount applied(weekdasys)10%`)   
+                break;
+            case 0:
+            case 6:
+                finalAmount = amount;
+                console.log("no discount on weekends")     
+                break;
+        }
+
+
+    </Script>
+</body>
+
+</html>

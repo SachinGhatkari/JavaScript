@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let products = [10,20,30,40,45,50];
+       let fliterproducsts = products.filter((x)=>{
+            return x > 20;
+        })
+
+        console.log("fliterproducsts "+fliterproducsts)
+         let values = [10,20];
+
+         let gst = values.map((x) =>{
+            return  x+x*.19;
+         })
+
+         console.log("addition ",gst);
+
+         let total = values.reduce((acc,value)=>{
+            return acc*value;
+         },1);
+
+         console.log("total ", total)
+
+
+       
+
+
+
+
+
+    </script>
+</body>
+</html>
